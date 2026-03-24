@@ -1,6 +1,6 @@
 <p class="meta" style="margin:0 0 2ch 0; opacity:.8;">
   <time datetime="{{ page.date | date_to_xmlschema }}">
-    {{ page.date | date: "%d/%m/%Y" }}
+    {{ page.date | date: "%m/%d/%Y" }}
   </time>
   {% if page.categories and page.categories.size > 0 %}
     · {{ page.categories | array_to_sentence_string }}
